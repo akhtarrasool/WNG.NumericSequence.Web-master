@@ -3,7 +3,6 @@ using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WNG.NumericSequence.Web;
 using WNG.NumericSequence.Web.Controllers;
-using Moq;
 using WNG.NumericSequence.Business;
 using WNG.NumericSequence.BusinessEntities;
 

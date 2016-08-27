@@ -10,14 +10,17 @@
 
 
 Technologies Used:
+
 Front End
+
 1. AngularJs 1.5.8
 2. Bootstrap 3.3.7
 3. JQuery1.12.4
 4. Razor Engine
 
 Back End
-5. MVC5
-6. Ninject.MVC5 (For Dependency Injection)
-7. Microsoft Unit Test Framework
-8. LINQ
+
+1. MVC5
+2. Ninject.MVC5 (For Dependency Injection)
+3. Microsoft Unit Test Framework
+4. LINQ

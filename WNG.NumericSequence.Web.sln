@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WNG.NumericSequence.Web", "WNG.NumericSequence.Web\WNG.NumericSequence.Web.csproj", "{0F4EB1EE-8EC6-4D0F-B92D-93318003E4D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WNG.NumericSequence.Web.Tests", "WNG.NumericSequence.Web.Tests\WNG.NumericSequence.Web.Tests.csproj", "{004683E7-EEBA-43EF-9CD7-84D729644AF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WNG.NumericSequence.BusinessEntities", "WNG.NumericSequence.BusinessEntities\WNG.NumericSequence.BusinessEntities.csproj", "{462EF180-2385-42FA-BF05-DC48B3D9CF9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WNG.NumericSequence.Business", "WNG.NumberSequence.Business\WNG.NumericSequence.Business.csproj", "{25CD82E3-C57E-4130-8877-0747DF4FE2C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WNG.NumericSequence.Business.Tests", "WNG.NumericSequence.Business.Tests\WNG.NumericSequence.Business.Tests.csproj", "{7E87F2B3-53E1-43DF-8E63-43C935B2F072}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F4EB1EE-8EC6-4D0F-B92D-93318003E4D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F4EB1EE-8EC6-4D0F-B92D-93318003E4D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F4EB1EE-8EC6-4D0F-B92D-93318003E4D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F4EB1EE-8EC6-4D0F-B92D-93318003E4D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{004683E7-EEBA-43EF-9CD7-84D729644AF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{004683E7-EEBA-43EF-9CD7-84D729644AF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{004683E7-EEBA-43EF-9CD7-84D729644AF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{004683E7-EEBA-43EF-9CD7-84D729644AF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{462EF180-2385-42FA-BF05-DC48B3D9CF9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{462EF180-2385-42FA-BF05-DC48B3D9CF9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{462EF180-2385-42FA-BF05-DC48B3D9CF9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{462EF180-2385-42FA-BF05-DC48B3D9CF9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25CD82E3-C57E-4130-8877-0747DF4FE2C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25CD82E3-C57E-4130-8877-0747DF4FE2C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25CD82E3-C57E-4130-8877-0747DF4FE2C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25CD82E3-C57E-4130-8877-0747DF4FE2C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E87F2B3-53E1-43DF-8E63-43C935B2F072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E87F2B3-53E1-43DF-8E63-43C935B2F072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E87F2B3-53E1-43DF-8E63-43C935B2F072}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E87F2B3-53E1-43DF-8E63-43C935B2F072}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .backdrop { width:100%; height:100% !important; background-image: url('../../img/World_Number.jpg');}
+    .SeqNum { float:left; }
+    .ProcessButton { float:left; }
+    input[type=text], textarea { height: 100px; width: 100%;}
+    .labelText {  font-family:Verdana; font-weight:bold; font-size:larger;}
+    .margin-bottom-xs {margin-bottom: 20px;}  
+    .margin-bottom-sm {margin-bottom: 30px;} 
+    .margin-bottom-md {margin-bottom: 40px;}
+    .margin-bottom-lg {margin-bottom: 50px;}
+</style>
+<html>
+<head>
+    <title ng-bind="models.Title"></title>
+   
+</head>
+<body class="backdrop" ng-app="AngularMVCApp" ng-controller="SequencesController">
+    <form name="mainForm" data-ng-submit="sendForm()" data-ng-controller="SequencesController" novalidate>
+        <div class="container">
+
+        </div>
+        <div class="container">
+            <div class="row margin-bottom-lg"> </div>
+            <div class="row margin-bottom-lg"> </div>
+            <div class="row margin-bottom-lg">
+                <div class="col-sm-4"> </div>
+                <div class="col-sm-2">
+                    <div class="SeqNum">
+                        <input ng-model="model.SequenceValue" name="seqValue" type="number" ng-min="0" ng-minlength="0" ng-maxlength="10" required />
+                        @*<pre>mainForm.seqValue.$error = {{ mainForm.seqValue.$error | json }}</pre>*@
+                        <div ng-messages="mainForm.seqValue.$error" style="color:red; font-weight:bold;" role="alert">
+                            <div ng-message="required">Please enter a number</div>
+                            <div ng-message="minlength">Number is too short</div>
+                            <div ng-message="maxlength">Number is too long</div>
+                            <div ng-message="min">Positive number only</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-1">
+                    <div class="ProcessButton"><button type="submit" data-ng-disabled="mainForm.$invalid">Process</button></div>
+                </div>
+            </div>
+            <div class="row margin-bottom-xs">
+                <div class="col-sm-3">
+                    <label class="labelText">ASC Sequence:</label>
+                    <label>All numbers up to and including the number entered</label>
+                </div>
+                <div class="col-sm-5">
+                    <textarea ng-model="geojson.asc" readonly></textarea>
+                </div>
+            </div>            
+            <div class="row margin-bottom-xs">
+                <div class="col-sm-3">
+                    <label class="labelText">Even ASC Sequence:</label>
+                    <label>All even numbers up to and including the number entered,</label>
+                </div>
+                <div class="col-sm-5">
+                    <textarea ng-model="geojson.evenASC" readonly></textarea>
+                </div>
+            </div>            
+            <div class="row margin-bottom-xs">
+                <div class="col-sm-3">
+                    <label class="labelText">Odd ASC Sequence:</label>
+                    <label>All odd numbers up to and including the number entered,</label>
+                </div>
+                <div class="col-sm-5">
+                    <textarea ng-model="geojson.oddASC" readonly></textarea>
+                </div>
+            </div> 
+            <div class="row margin-bottom-xs">
+                <div class="col-sm-3">
+                    <label class="labelText">Fibonacci Sequence:</label>
+                    <label>All fibonacci number up to and including the number entered</label>
+                </div>
+                <div class="col-sm-5">
+                    <textarea ng-model="geojson.fibonacci" readonly></textarea>
+                </div>
+            </div>  
+            <div class="row margin-bottom-xs">
+                <div class="col-sm-3">
+                    <label class="labelText">Substitution Sequence:</label>
+                    <div style="font-weight:700;">
+                        <p>
+                            All numbers up to and including the number entered, with conditions :
+                            <ol>
+                                <li>1  Replace multiple of 3 with 'C'</li>
+                                <li>Replace multiple of 5 with 'E'</li>
+                                <li>Replace multiple of both 3 and 5 with 'Z'</li>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <textarea ng-model="geojson.substitution" readonly></textarea>
+                </div>
+            </div>      
+        </div>
+    </form>
+</body>
+</html>
+
